@@ -5,6 +5,12 @@
     --blue: #6b79ff;
     --navy: #2e3360;
     --black: #1f2e2f;
+
+    --colour1: #000000;
+    --colour2: #000000;
+    --colour3: #000000;
+    --colour4: #000000;
+    --colour5: #000000;
 }
 
 body {
@@ -22,4 +28,24 @@ body {
 
 * {
     text-align: center;
+    color: var(--blue);
+}
+
+.term {
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+
+.text {
+    margin: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.box {
+    width: 20px;
+    height: 20px;
 }
