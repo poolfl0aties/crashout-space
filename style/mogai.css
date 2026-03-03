@@ -1,0 +1,25 @@
+:root {
+    --white: #fbeaff;
+    --pink: #f295c6;
+    --green: #9ee6cf;
+    --blue: #6b79ff;
+    --navy: #2e3360;
+    --black: #1f2e2f;
+}
+
+body {
+    background-color: var(--navy);    
+}
+
+.main {
+    background-color: var(--white);
+    margin: auto;
+    margin-top: 50px;
+    width: clamp(300px, 70%, 700px);
+    height: 500px;
+    padding: 20px;
+}
+
+* {
+    text-align: center;
+}
