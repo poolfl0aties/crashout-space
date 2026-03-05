@@ -13,6 +13,8 @@
     --colour5: #000000;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
     background-color: var(--navy);    
 }
@@ -22,7 +24,7 @@ body {
     margin: auto;
     margin-top: 50px;
     width: clamp(300px, 70%, 700px);
-    height: 500px;
+    height: max-content;
     padding: 20px;
     border-radius: 50px;
 }
@@ -30,6 +32,7 @@ body {
 p, h1 {
     text-align: center;
     color: var(--blue);
+    font-family: "Winky Sans";
 }
 
 .term {
@@ -47,12 +50,21 @@ p, h1 {
 }
 
 .box {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 }
 
 .colours {
     justify-content: space-around;
+}
+
+.box p {
+    color: transparent;
+    height: inherit;
+
+    &:hover {
+        color: var(--white);
+    }
 }
 
 button {
@@ -89,4 +101,15 @@ button {
 
 #colour5 {
     background-color: var(--colour5);
+}
+
+@media screen and (max-width: 500px) {
+    .colours {
+        display: block;
+    }
+
+    .box {
+        width: inherit;
+        margin-bottom: 10px;
+    }
 }
