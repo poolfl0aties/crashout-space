@@ -29,10 +29,13 @@ body {
     border-radius: 50px;
 }
 
+* {
+    font-family: "Winky Sans", sans-serif;
+}
+
 p, h1 {
     text-align: center;
     color: var(--blue);
-    font-family: "Winky Sans";
 }
 
 .term {
