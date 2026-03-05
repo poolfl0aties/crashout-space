@@ -24,6 +24,7 @@ body {
     width: clamp(300px, 70%, 700px);
     height: 500px;
     padding: 20px;
+    border-radius: 50px;
 }
 
 p, h1 {
@@ -46,6 +47,46 @@ p, h1 {
 }
 
 .box {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.colours {
+    justify-content: space-around;
+}
+
+button {
+    background-color: var(--pink);
+    border: 2px solid var(--navy);
+    border-radius: 10px;
+    padding: 8px 18px;
+    color: var(--navy);
+    font-size: 15px;
+    display: block;
+    margin: auto;
+
+    &:hover {
+        background-color: #ebb8d3;
+        border: 2px solid var(--blue);
+    }
+}
+
+#colour1 {
+    background-color: var(--colour1);
+}
+
+#colour2 {
+    background-color: var(--colour2);
+}
+
+#colour3 {
+    background-color: var(--colour3);
+}
+
+#colour4 {
+    background-color: var(--colour4);
+}
+
+#colour5 {
+    background-color: var(--colour5);
 }
