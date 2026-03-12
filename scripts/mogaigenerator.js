@@ -1,5 +1,5 @@
 const r = document.querySelector(':root'); // gets the root element for variables
-const prefixes = ["magical","sun","moon","star","paradox"];
+const prefixes = ["magical","sun","moon","star","paradox","prince","princess","royal","knight","wife","bride","spouse","husband","groom","fish","plants","lolita","jirai","ouji","scene","alt","emo","goth","punk","twee","kidcore","light academia","dark academia","cottagecore","whimsigoth"];
 const suffixes = ["boy","girl","xip","hex","omen","vex","masc","fem","man","woman","guy","gal","enby","enban","noi","noian","voi","voian","nixy","xynth","xip","xenan","darling","⛶","✦","⚠︎","✿","◇","🜲","✂","out of spite","♡","☼","★"];
 
 function randomHex() { // listen let's be real i copied this part off the internet. baby steps.

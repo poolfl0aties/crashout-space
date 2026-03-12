@@ -118,6 +118,11 @@ a {
     display: none;
 }
 
+.scroll {
+    overflow: auto;
+    height: 100px;
+}
+
 @media screen and (max-width: 500px) {
     .colours {
         display: block;
