@@ -1,6 +1,6 @@
 const r = document.querySelector(':root'); // gets the root element for variables
-const prefixes = [];
-const suffixes = ["boy","girl","xip","hex","omen","vex","masc","fem","man","woman","guy","gal","enby","enban","noi","noian","voi","voian","nixy","xynth","xip","xenan"];
+const prefixes = ["magical","sun","moon","star","paradox"];
+const suffixes = ["boy","girl","xip","hex","omen","vex","masc","fem","man","woman","guy","gal","enby","enban","noi","noian","voi","voian","nixy","xynth","xip","xenan","darling","⛶","✦","⚠︎","✿","◇","🜲","✂","out of spite","♡","☼","★"];
 
 function randomHex() { // listen let's be real i copied this part off the internet. baby steps.
     let letters = "0123456789ABCDEF";

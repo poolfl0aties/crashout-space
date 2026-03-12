@@ -106,6 +106,18 @@ button {
     background-color: var(--colour5);
 }
 
+a {
+    color: var(--navy);
+}
+
+.alt-page:target {
+    display: block;
+}
+
+.alt-page:not(:target) {
+    display: none;
+}
+
 @media screen and (max-width: 500px) {
     .colours {
         display: block;
