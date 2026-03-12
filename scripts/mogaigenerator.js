@@ -1,4 +1,6 @@
 const r = document.querySelector(':root'); // gets the root element for variables
+const prefixes = [];
+const suffixes = ["boy","girl","xip","hex","omen","vex","masc","fem","man","woman","guy","gal","enby","enban","noi","noian","voi","voian","nixy","xynth","xip","xenan"];
 
 function randomHex() { // listen let's be real i copied this part off the internet. baby steps.
     let letters = "0123456789ABCDEF";
@@ -35,4 +37,18 @@ function generateColour() {
     text3.innerHTML = "<p>" + varColour3 + "</p>";
     text4.innerHTML = "<p>" + varColour4 + "</p>";
     text5.innerHTML = "<p>" + varColour5 + "</p>";
+}
+
+function generateTerm() {
+    let prefix = prefixes[Math.floor(Math.random() * prefixes.length)];
+    console.log(prefix);
+    let p = document.getElementById("prefix");
+    p.innerHTML = "<p>" + prefix + "</p>";
+
+//generate and inject prefix
+
+    let suffix = suffixes[Math.floor(Math.random() * suffixes.length)];
+    console.log(suffix);
+    let s = document.getElementById("suffix");
+    s.innerHTML = "<p>" + suffix + "</p>";
 }
