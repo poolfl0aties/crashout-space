@@ -1,6 +1,6 @@
 const r = document.querySelector(':root'); // gets the root element for variables
-const prefixes = ["magical","sun","moon","star","paradox","prince","princess","royal","knight","wife","bride","spouse","husband","groom","fish","plants","lolita","jirai","ouji","scene","alt","emo","goth","punk","twee","kidcore","light academia","dark academia","cottagecore","whimsigoth"];
-const suffixes = ["boy","girl","xip","hex","omen","vex","masc","fem","man","woman","guy","gal","enby","enban","noi","noian","voi","voian","nixy","xynth","xip","xenan","darling","⛶","✦","⚠︎","✿","◇","🜲","✂","out of spite","♡","☼","★"];
+const prefixes = ["magical","sun","moon","star","paradox","prince","princess","royal","knight","wife","bride","spouse","husband","groom","fish","plant","lolita","jirai","ouji","scene","alt","emo","goth","punk","twee","kidcore","light academia","dark academia","cottagecore","whimsigoth","sweetheart","darling","seal","poppy","daisy","dandelion","lavender","tulip","rose","orchid","shark","squid","octopus","starfish","anemone","seahorse","otter","ferret","possum","horse"];
+const suffixes = ["boy","girl","xip","hex","omen","vex","masc","fem","man","woman","guy","gal","enby","enban","noi","noian","voi","voian","nixy","xynth","xip","xenan","darling","⛶","✦","⚠︎","✿","◇","🜲","✂","out of spite","♡","☼","★","vivaith","indeacy","egocieve"];
 
 function randomHex() { // listen let's be real i copied this part off the internet. baby steps.
     let letters = "0123456789ABCDEF";
