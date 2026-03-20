@@ -1,33 +1,63 @@
-const draggableElement = document.querySelector('.draggableElement');
-let offsetX = 0, offsetY = 0;
-draggableElement.addEventListener('mousedown', function (e) {
-    // Preventing default behavior to avoid unwanted selections
-    e.preventDefault();
+var dragItem = document.querySelector("#item");
+    var container = document.querySelector("#container");
 
-    // Calculating initial offsets
-    offsetX = e.clientX - draggableElement.getBoundingClientRect().left;
-    offsetY = e.clientY - draggableElement.getBoundingClientRect().top;
+    var active = false;
+    var currentX;
+    var currentY;
+    var initialX;
+    var initialY;
+    var xOffset = 0;
+    var yOffset = 0;
 
-    // Adding the 'dragging' class to apply styling changes
-    draggableElement.classList.add('dragging');
+    container.addEventListener("touchstart", dragStart, false);
+    container.addEventListener("touchend", dragEnd, false);
+    container.addEventListener("touchmove", drag, false);
 
-    // Adding event listeners for mousemove and mouseup
-    document.addEventListener('mousemove', dragElement);
-    document.addEventListener('mouseup', stopDragging);
-});
-function dragElement(e) {
-    // Updating the element's position based on mouse movements
-    draggableElement.style.left = `${e.clientX - offsetX}px`;
-    draggableElement.style.top = `${e.clientY - offsetY}px`;
-}
-function stopDragging(e) {
-    // Preventing default behavior to avoid unwanted selections
-    e.preventDefault();
+    container.addEventListener("mousedown", dragStart, false);
+    container.addEventListener("mouseup", dragEnd, false);
+    container.addEventListener("mousemove", drag, false);
 
-    // Removing the 'dragging' class to revert styling changes
-    draggableElement.classList.remove('dragging');
+    function dragStart(e) {
+      if (e.type === "touchstart") {
+        initialX = e.touches[0].clientX - xOffset;
+        initialY = e.touches[0].clientY - yOffset;
+      } else {
+        initialX = e.clientX - xOffset;
+        initialY = e.clientY - yOffset;
+      }
 
-    // Removing event listeners to stop tracking mouse movements
-    document.removeEventListener('mousemove', dragElement);
-    document.removeEventListener('mouseup', stopDragging);
-}
+      if (e.target === dragItem) {
+        active = true;
+      }
+    }
+
+    function dragEnd(e) {
+      initialX = currentX;
+      initialY = currentY;
+
+      active = false;
+    }
+
+    function drag(e) {
+      if (active) {
+      
+        e.preventDefault();
+      
+        if (e.type === "touchmove") {
+          currentX = e.touches[0].clientX - initialX;
+          currentY = e.touches[0].clientY - initialY;
+        } else {
+          currentX = e.clientX - initialX;
+          currentY = e.clientY - initialY;
+        }
+
+        xOffset = currentX;
+        yOffset = currentY;
+
+        setTranslate(currentX, currentY, dragItem);
+      }
+    }
+
+    function setTranslate(xPos, yPos, el) {
+      el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
+    }
