@@ -1,43 +1,33 @@
-// Make the DIV element draggable:
-dragElement(document.getElementById("mydiv"));
-
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
-    // if present, the header is where you move the DIV from:
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-  } else {
-    // otherwise, move the DIV from anywhere inside the DIV:
-    elmnt.onmousedown = dragMouseDown;
-  }
-
-  function dragMouseDown(e) {
-    e = e || window.event;
+const draggableElement = document.querySelector('.draggableElement');
+let offsetX = 0, offsetY = 0;
+draggableElement.addEventListener('mousedown', function (e) {
+    // Preventing default behavior to avoid unwanted selections
     e.preventDefault();
-    // get the mouse cursor position at startup:
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
-  }
 
-  function elementDrag(e) {
-    e = e || window.event;
+    // Calculating initial offsets
+    offsetX = e.clientX - draggableElement.getBoundingClientRect().left;
+    offsetY = e.clientY - draggableElement.getBoundingClientRect().top;
+
+    // Adding the 'dragging' class to apply styling changes
+    draggableElement.classList.add('dragging');
+
+    // Adding event listeners for mousemove and mouseup
+    document.addEventListener('mousemove', dragElement);
+    document.addEventListener('mouseup', stopDragging);
+});
+function dragElement(e) {
+    // Updating the element's position based on mouse movements
+    draggableElement.style.left = `${e.clientX - offsetX}px`;
+    draggableElement.style.top = `${e.clientY - offsetY}px`;
+}
+function stopDragging(e) {
+    // Preventing default behavior to avoid unwanted selections
     e.preventDefault();
-    // calculate the new cursor position:
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-  }
 
-  function closeDragElement() {
-    // stop moving when mouse button is released:
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
+    // Removing the 'dragging' class to revert styling changes
+    draggableElement.classList.remove('dragging');
+
+    // Removing event listeners to stop tracking mouse movements
+    document.removeEventListener('mousemove', dragElement);
+    document.removeEventListener('mouseup', stopDragging);
 }

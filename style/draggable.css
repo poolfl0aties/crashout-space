@@ -1,15 +1,29 @@
-#mydiv {
-  position: absolute;
-  z-index: 9;
-  background-color: #f1f1f1;
-  border: 1px solid #d3d3d3;
-  text-align: center;
+.container, .draggableElement{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#mydivheader {
-  padding: 10px;
-  cursor: move;
-  z-index: 10;
-  background-color: #2196F3;
-  color: #fff;
+.container {
+    min-height: 100vh;
+    min-width: 250px;
+    position: relative;
+}
+
+.draggableElement {
+    position: absolute;
+    cursor: grab;
+    width: 150px;
+    height: 150px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 30px;
+    font-family: 'Calibri';
+    transition: transform .3s;
+    background-color: #10344d;
+}
+
+.dragging {
+    transform: scale(.9);
+    cursor: grabbing !important;
 }
