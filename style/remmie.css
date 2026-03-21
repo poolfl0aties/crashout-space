@@ -1,8 +1,18 @@
+:root {
+    --black: #303030;
+    --orange: #f89038; 
+    --red: #d85738;
+    --white: #f8f8f8;
+    --purple: #d8c8f0;
+    --grey: #485150;
+}
+
 .text {
     text-align: center;
     font-family: "Pixel Operator";
     font-weight: bold;
     font-size: 35px;
+    color: var(--black);
 }
 
 img {
@@ -12,4 +22,8 @@ img {
 
 .wrapper {
     margin-top: 200px;
+}
+
+body {
+    background-color: var(--white);
 }
