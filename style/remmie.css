@@ -1,0 +1,15 @@
+.text {
+    text-align: center;
+    font-family: "Pixel Operator";
+    font-weight: bold;
+    font-size: 35px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.wrapper {
+    margin-top: 200px;
+}
