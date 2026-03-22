@@ -35,27 +35,46 @@
   }
 }
 
+@keyframes rollOver{
+    from {
+
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
 .text {
     text-align: center;
     font-family: "Pixel Operator";
     font-weight: bold;
     font-size: 35px;
     color: var(--black);
+    height: 75px;
 }
 
-img {
+.pokeball {
     display: block;
     margin: auto;
-    position: relative;
+    cursor: pointer;
+    transform-origin: 50% 90%;
+
     animation-name: pokeball;
     animation-duration: 8s;
     animation-iteration-count: infinite;
-    transform-origin: 50% 90%;
     animation-timing-function: snap;
 }
 
+.sideball {
+    display: block;
+    margin: auto;
+    transform-origin: 50% 90%;
+}
+
 .wrapper {
+    margin: auto;
     margin-top: 200px;
+    width: 700px;
 }
 
 body {
