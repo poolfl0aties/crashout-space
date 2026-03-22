@@ -7,9 +7,8 @@
     --grey: #485150;
 }
 
-@keyframes pokeball {
-    from {
-  }
+@keyframes ballBounce {
+  from {}
   5% {
     transform: translateY(-20px);
   }
@@ -20,27 +19,32 @@
     transform: translateY(-20px);
   }
   20% {
-    transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px);
   }
-  23% {
+  to {}
+}
+
+@keyframes ballRoll {
+  from {}
+  10% {
     transform: rotate(-15deg);
   }
-  28% {
+  25% {
     transform: rotate(15deg);
   }
-  33% {
+  40% {
     transform: rotate(0deg);
   }
   to {
   }
 }
 
-@keyframes rollOver{
+@keyframes moveOver{
     from {
 
     }
     to {
-        transform: rotate(-360deg);
+      
     }
 }
 
@@ -59,10 +63,17 @@
     cursor: pointer;
     transform-origin: 50% 90%;
 
-    animation-name: pokeball;
-    animation-duration: 8s;
+    animation-name: ballBounce;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-timing-function: snap;
+    animation-timing-function: linear;
+
+    &:hover {
+      animation-name: ballRoll;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
 }
 
 .sideball {
@@ -79,4 +90,10 @@
 
 body {
     background-color: var(--white);
+}
+
+#pokeball {
+  position: relative;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
 }
