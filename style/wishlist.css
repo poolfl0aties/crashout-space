@@ -1,8 +1,9 @@
 .body {
-    width: clamp(250px, 90%, 700px);
+    width: clamp(250px, 90%, 650px);
     padding: 20px 0px 20px 0px;
     border: 1px solid black;
     margin: auto;
+    margin-top: 10rem;
     display: block;
 }
 
