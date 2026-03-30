@@ -1,0 +1,28 @@
+.body {
+    width: clamp(250px, 90%, 700px);
+    padding: 20px 0px 20px 0px;
+    border: 1px solid black;
+    margin: auto;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
+.accordion {
+    width: 90%;
+    display: block;
+    margin: auto;
+    text-align: left;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
