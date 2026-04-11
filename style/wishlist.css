@@ -1,5 +1,5 @@
 .body {
-    width: clamp(250px, 90%, 650px);
+    width: clamp(250px, 85%, 650px);
     padding: 20px 0px 20px 0px;
     border: 1px solid black;
     margin: auto;
@@ -29,4 +29,8 @@
     width: 90%;
     margin: auto;
     text-align: left;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }
