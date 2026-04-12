@@ -1,11 +1,35 @@
-.body {
-    width: clamp(250px, 85%, 650px);
-    padding: 20px 0px 20px 0px;
-    border: 1px solid black;
+:root {
+    --pale: #d8cad5;
+    --pink: #a46c93;
+    --purple: #554664;
+    --blue: #878bbf;
+    --teal: #a2d2dd;
+}
+
+body {
+    background-color: var(--blue);
+}
+
+.outline {
     margin: auto;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    width: clamp(250px, 90%, 650px);
+    height: calc-size(max-content, size + 40px);
+    background-color: var(--purple);
+    border-radius: 65px 85px 75px 95px/95px 75px 105px 65px;
+    color: var(--pink);
+}
+
+.body {
+    width: 90%;
+    padding: 25px 10px 25px 10px;
+    margin: auto;
+    position: relative;
+    top: 20px;
     display: block;
+    border-radius: 95px 55px 95px 55px/55px 95px 55px 95px;
+    background-color: var(--pale);
 }
 
 .hidden {
@@ -20,9 +44,12 @@
     width: 90%;
     display: block;
     margin: auto;
+    margin-top: 2px;
     text-align: left;
     padding: 10px;
     font-size: 16px;
+    background-color: var(--teal);
+    border: 2px solid var(--blue);
 }
 
 .content {
