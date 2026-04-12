@@ -32,6 +32,14 @@ body {
     background-color: var(--pale);
 }
 
+b, h1 {
+    color: var(--purple) !important;
+}
+
+a {
+    color: var(--blue);
+}
+
 .hidden {
     display: none;
 }
@@ -50,6 +58,12 @@ body {
     font-size: 16px;
     background-color: var(--teal);
     border: 2px solid var(--blue);
+    color: var(--purple);
+
+    &:hover {
+        background-color: var(--blue);
+        cursor: pointer;
+    }
 }
 
 .content {
