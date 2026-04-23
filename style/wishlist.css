@@ -40,14 +40,6 @@ a {
     color: var(--blue);
 }
 
-.hidden {
-    display: none;
-}
-
-.shown {
-    display: block;
-}
-
 .accordion {
     width: 100%;
     display: block;
