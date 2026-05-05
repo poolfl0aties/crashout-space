@@ -3,8 +3,8 @@
     height: 100vh;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 2fr 2fr 2fr 2fr 2fr 1fr;
-    gap: 10px;
     overflow: hidden;
+    gap: 10px;
 }
     
 .div3 {
@@ -73,4 +73,9 @@
 
 .navbar {
     background-color: grey;
+}
+
+.app {
+    text-align: center;
+    border: 1px solid black;
 }
