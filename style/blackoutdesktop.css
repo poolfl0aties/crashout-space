@@ -81,6 +81,7 @@
 }
 
 body {
-    scale: 97%;
     overflow: hidden;
+    position: absolute;
+    left: -8px;
 }
