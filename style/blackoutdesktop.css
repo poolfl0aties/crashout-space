@@ -1,0 +1,75 @@
+.parent {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 1fr;
+    gap: 10px;
+}
+    
+.div3 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.div4 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.div5 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.div6 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.div7 {
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
+.div8 {
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.div9 {
+    grid-column-start: 1;
+    grid-row-start: 5;
+}
+
+.div10 {
+    grid-column-start: 2;
+    grid-row-start: 5;
+}
+
+.div11 {
+    grid-column: span 7 / span 7;
+    grid-column-start: 1;
+    grid-row-start: 6;
+}
+
+.div12 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 4;
+}
+
+.div13 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 1;
+}
+
+.div14 {
+    grid-column-start: 7;
+    grid-row-start: 2;
+}
+
+.navbar {
+    background-color: grey;
+}
