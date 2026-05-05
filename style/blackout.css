@@ -1,0 +1,38 @@
+.wrapper {
+    width: 200px;
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+    padding: 10px;
+}
+
+.pfp {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: -12px;
+    padding: 5px 7px;
+}
+
+.button {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.note {
+    width: 180px;
+    height: 180px;
+    padding: 10px 10px;
+    position: absolute;
+    background-color: orange;
+    top: 30px;
+    left: 30px;
+    rotate: -17deg;
+}
