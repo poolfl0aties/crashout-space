@@ -2,7 +2,7 @@
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.5fr;
     overflow: hidden;
     gap: 10px;
 }
