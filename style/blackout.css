@@ -27,12 +27,25 @@
 }
 
 .note {
-    width: 180px;
-    height: 180px;
+    width: 130px;
+    height: 130px;
     padding: 10px 10px;
     position: absolute;
     background-color: orange;
     top: 30px;
     left: 30px;
     rotate: -17deg;
+}
+
+.error {
+    font-size: 10pt;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block; 
 }
