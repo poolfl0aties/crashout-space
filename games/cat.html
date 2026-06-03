@@ -7,17 +7,20 @@
     <link rel="stylesheet" href="/style/cat.css">
 </head>
 <body>
-    <img onclick="clickCat()" src="/images/Untitled11_20260603161412.png" height="300px">
+    <img onclick="clickCat()" id="cat" src="/images/Untitled11_20260603161412.png" height="300px">
     <div class="counter" id="counter">
         0
     </div>
     <script> 
         const counter = document.getElementById("counter");
+        const image = document.getElementById("cat");
         let count = 0;
 
         function clickCat() {
             count = count + 1;
+            image.classList.add("animate");
             counter.textContent=count;
+            image.classList.remove("animate");
             return count;
         }
     </script>
