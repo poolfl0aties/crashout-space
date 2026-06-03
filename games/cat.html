@@ -6,9 +6,18 @@
     <title>Click the Cat</title>
 </head>
 <body>
-    <img>
-    <div class="counter">
-        <p> </p>
+    <img onclick="clickCat()" src="/images/Untitled11_20260603161412.png" height="300px">
+    <div class="counter" id="counter">
+        0
     </div>
+    <script> 
+        const counter = document.getElementByID("counter");
+        let count = 0;
+
+        function clickCat() {
+            let count =+ 1;
+            counter.textContent=count;
+        }
+    </script>
 </body>
 </html>
