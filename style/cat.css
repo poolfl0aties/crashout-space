@@ -1,0 +1,10 @@
+img {
+    display: block;
+    margin: auto;
+}
+
+.counter {
+    display: block;
+    margin: auto;
+    font-size: 25px;
+}
