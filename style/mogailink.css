@@ -18,3 +18,12 @@
     border: 1px solid;
     height: 85%;
 }
+
+.item {
+    width: max-content;
+    height: max-content;
+    padding: 10px 25px;
+    border: 1px solid black;
+    border-radius: 100%; 
+    position: absolute;
+}
