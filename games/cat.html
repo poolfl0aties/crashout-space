@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click the Cat</title>
+    <link rel="stylesheet" href="/style/cat.css">
+</head>
+<body>
+    <img onclick="clickCat()" id="cat" src="/images/Untitled11_20260603161412.png" height="300px">
+    <div class="counter" id="counter">
+        0
+    </div>
+    <script> 
+        const counter = document.getElementById("counter");
+        const image = document.getElementById("cat");
+        let count = 0;
+
+        function clickCat() {
+            count = count + 1;
+            image.classList.add("animate");
+            counter.textContent=count;
+            image.classList.remove("animate");
+            return count;
+        }
+    </script>
+</body>
+</html>
