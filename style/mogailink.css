@@ -1,0 +1,20 @@
+.body {
+    width: clamp(300px, 80%, 900px);
+    border: 1px solid black;
+    margin: auto;
+    height: 600px;
+}
+
+.wrapper {
+    width: max-content;
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+
+.viewport {
+    width: 90%;
+    margin: auto;
+    border: 1px solid;
+    height: 85%;
+}
