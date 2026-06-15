@@ -1,0 +1,66 @@
+body {
+    background-color: gray;
+}
+
+.wrapper {
+    height: 400px;
+    width: clamp(500px, 90%, 900px);
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    height: 90%;
+    justify-content: space-between;
+}
+
+.profile {
+    border: 1px solid black;
+    width: clamp(250px,40%,360px);
+}
+
+.pfp {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.profile p {
+    text-align: center;
+}
+.profile b {
+    font-size: 19px;
+}
+
+
+.letme {
+    font-size: 21px;
+}
+.letmewrap {
+    width: 20px;
+}
+.left {
+    rotate: -90deg;
+    text-wrap: nowrap;
+    position: relative;
+    bottom: -330px;
+}
+.right {
+    rotate: 90deg;
+    text-wrap: nowrap;
+    position: relative;
+    top: 15px;
+}
+
+
+.lyric {
+    margin: 20px 0px;
+    font-size: 27px;
+}
+.two {
+    text-align: right;
+}
+
