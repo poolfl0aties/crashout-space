@@ -8,6 +8,12 @@ body {
     margin: auto;
 }
 
+.image {
+    width: 75px;
+    height: 355px;
+    background-color: white;
+}
+
 .flex {
     display: flex;
     height: 90%;
@@ -17,6 +23,7 @@ body {
 .profile {
     border: 1px solid black;
     width: clamp(250px,40%,360px);
+    height: 355px;
 }
 
 .pfp {
@@ -64,3 +71,49 @@ body {
     text-align: right;
 }
 
+
+
+@media screen and (max-width: 800px) {
+    body {
+        background-color: rgb(119, 134, 119);
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .wrapper {
+        height: 1000px;
+        width: clamp(300px, 90%, 1000px);
+    }
+
+    .profile {
+        width: 80%;
+        margin: auto;
+    }
+
+    .letmewrap {
+        height: 20px;
+        display: block;
+        margin: auto;
+        width: max-content;
+    }
+
+    .left {
+        rotate: 0deg;
+        text-wrap: nowrap;
+        position: relative;
+        bottom: 0px;
+    }
+    .right {
+        rotate: 180deg;
+        text-wrap: nowrap;
+        position: relative;
+        top: 0px;
+    }
+    .image {
+        width: 80%;
+        height: 75px;
+        margin: auto;
+    }
+}
