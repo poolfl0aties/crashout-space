@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/libraries/pastebin.css">
+    <link rel="stylesheet" href="/style/libraries/accordion.css">
+    <title>Document</title>
+    <style>
+
+        p {
+            margin-top: 0px;
+            font-size: 14px;
+        }
+
+        b {
+            line-height: 25px;
+        }
+
+        button {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        .term {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: max-content;
+            align-items: center;
+        }
+
+        .term img {
+            width: 130px;
+        }
+
+        .term p {
+            width: 185px;
+        }
+
+        .viewbox {
+            width: 350px;
+            height: 450px;
+            overflow-y: scroll;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="viewbox"> 
+
+        <button onclick="accordion('gender')" class="accordion"> gender </button>
+            <div id="gender" class="hidden content"> 
+
+                <div class="term">
+                    <img src="/images/flags/gendervoid.jpg" height="100%" title="flag by @genderaverse">
+                    <p> <b> gendervoid </b> <br> a gender which is an absence, a blank space or void where a gender might otherwise be </p>
+                </div>
+
+                <div class="term">
+                    <img src="/images/flags/transnull.jpg" height="100%" title="flag by @flags-of-wrath">
+                    <p> <b> transnull </b> <br> I CAN'T FIND AN UNDERSTANDABLE DEFINITION RRRAAHGHG </p>
+                </div>
+
+                <div class="term">
+                    <img src="/images/flags/adrenasence.jpg" height="100%" title="flag by @rwuffles">
+                    <p> <b> adrenasence </b> <br> a nonxenic neogender umbrella based in adrenaline </p>
+                </div>
+
+                <div class="term">
+                    <img src="/images/flags/dreviken.jpg" height="100%" title="flag by @idwl">
+                    <p> <b> dreviken </b> <br> a neoumbrella related to motorbikes, biking aesthetics, bikers/being a biker, and all things associated with them </p>
+                </div>
+
+            </div>
+
+            <button onclick="accordion('alterhuman')" class="accordion"> alterhuman </button>
+            <div id="alterhuman" class="hidden content"> 
+
+                <div class="term">
+                    <img src="/images/flags/demihuman.jpg" height="100%" title="flag by @sakura-miku-my-love">
+                    <p> <b> demihuman </b> <br> someone who is only partially human, or only partially identifies with humanity </p>
+                </div>
+
+                <div class="term">
+                    <img src="/images/flags/german shepherd species.png" height="100%" title="flag by @spectrral">
+                    <p> <b> german shepherd species </b> <br> a species flag for german shepherds </p>
+                </div>
+
+            </div>
+
+            <button onclick="accordion('attraction')" class="accordion"> attraction, orientation, relationships </button>
+            <div id="attraction" class="hidden content"> 
+
+                <div class="term">
+                    <img src="/images/flags/gendervoid.jpg" height="100%" title="flag by @genderaverse">
+                    <p> <b> gendervoid </b> <br> a gender which is an absence, a blank space or void where a gender might otherwise be </p>
+                </div>
+
+            </div>
+
+            <button onclick="accordion('unorthaids')" class="accordion"> unorthaids </button>
+            <div id="unorthaids" class="hidden content"> 
+
+                <div class="term">
+                    <img src="/images/flags/gendervoid.jpg" height="100%" title="flag by @genderaverse">
+                    <p> <b> gendervoid </b> <br> a gender which is an absence, a blank space or void where a gender might otherwise be </p>
+                </div>
+
+            </div>
+
+    </div>
+    <script src="/scripts/accordion.js"> </script>
+</body>
+</html>
