@@ -1,3 +1,5 @@
+const filterArray = ["gender", "alterhuman", "orientation"];
+
 function resizeGridItem(item){
   grid = document.getElementsByClassName("grid")[0];
   rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
@@ -25,9 +27,6 @@ allItems = document.getElementsByClassName("item");
 for(x=0;x<allItems.length;x++){
   imagesLoaded( allItems[x], resizeInstance);
 }
-
-
-const filterArray = ["gender", "alterhuman", "orientation"];
 
 function filterItem(filter) {
     console.log("filter");
