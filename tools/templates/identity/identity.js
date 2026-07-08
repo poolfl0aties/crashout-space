@@ -33,7 +33,7 @@ function filterItem(filter) {
     for(i=0 ; i < filterArray.length ; i++) { // for the number of items in the filter list
         if(filterArray[i] !== filter) { // if the item selected doesn't match the input filter
             let object = filterArray[i];
-            let objectArray = getElementsByClassName(object); // get all the elements with the class
+            let objectArray = document.getElementsByClassName(object); // get all the elements with the class
             for(i=0 ; i < objectArray.length ; i++ ) {
                 objectArray[i].classList.add("hidden");
             }
