@@ -25,3 +25,18 @@ allItems = document.getElementsByClassName("item");
 for(x=0;x<allItems.length;x++){
   imagesLoaded( allItems[x], resizeInstance);
 }
+
+
+const filterArray = ["gender", "alterhuman", "orientation"];
+
+function filterItem(filter) {
+    console.log("filter");
+    for(i=0 ; i < filterArray.length ; i++) { // for the number of items in the filter list
+        if(filterArray[i] !== filter) { // if the item selected doesn't match the input filter
+            let objectArray = getElementsByClassName(filterArray[i]); // get all the elements with the class
+            for(i=0 ; i < objectArray.length ; i++ ) {
+                objectArray[i].classList.add("hidden");
+            }
+        }
+    }
+}
