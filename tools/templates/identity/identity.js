@@ -43,6 +43,7 @@ function filterItem(filter) {
 function addClass(element, name) {
   console.log(element);
   element.classList.add(name); 
+  console.log(element.classList);
 }
 
 // Hide elements that are not selected
