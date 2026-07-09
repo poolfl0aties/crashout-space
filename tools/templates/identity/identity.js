@@ -33,26 +33,20 @@ function filterItem(filter) {
   console.log(filter);
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
+    removeClass(x[i], "show");
     console.log(x[i].classList);
-    if (x[i].classList.contains(filter)) w3AddClass(x[i], "show");
+    if (x[i].classList.contains(filter)) addClass(x[i], "show");
   }
 }
 
 // Show filtered elements
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
+function addClass(element, name) {
+  console.log(element);
+  element.classList.add(name); 
 }
 
 // Hide elements that are not selected
-function w3RemoveClass(element, name) {
+function removeClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
