@@ -61,10 +61,10 @@ body {
     }
 }
 
-.hidden {
-    display: none;
+.show {
+    display: block;
 }
 
-.shown {
-    display: block;
+.item {
+  display: none;
 }
