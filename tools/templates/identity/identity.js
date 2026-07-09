@@ -19,7 +19,10 @@ function resizeInstance(instance){
 }
 
 window.onload = filterItem("item");
-window.onload = resizeAllGridItems();
+window.onload = resizeAllGridItems(), 
+setTimeout(() => {
+  resizeAllGridItems();
+}, 10); // gives a quick delay to make sure content has loaded properly 
 window.addEventListener("resize", resizeAllGridItems);
 
 allItems = document.getElementsByClassName("item");

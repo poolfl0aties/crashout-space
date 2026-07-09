@@ -1,0 +1,46 @@
+This template is intended to be used as a tool for displaying one's identity collection / hoard. You can choose to use it however you would like, I do not control what you do with this template and I do not care, as long as credit is given on the page.
+
+
+
+CREDITING 
+
+Credit is inbuilt into the bottom of the page. You are free to move this credit around, as long as the basic content remains the same. 
+
+
+
+CREATING NEW FILTERS
+
+The filters in this template are made using classes. The only two things you need to do to create a new filter is:
+
+1) Create a new button.
+2) Add a new class.
+
+For creating a new button, you should add the below text into the buttons section at the top of the body. In the text below, you will replace 'XXX' with your new class, and 'YYY' with the text you would like your buttons to show. 
+
+<button onclick="filterItem('XXX')"> YYY </button>
+
+These terms do not have to match, and for button content longer than one word, I recommend that they don't. For making life easier, you should keep your class names as short and simple as possible. 
+
+Your new class also needs to be applied to the appropriate boxes. This class should be added next to the "item" class. 
+
+
+
+ADDING NEW TERMS
+
+<div class="item FILTER">
+    <div class="content">
+        <div class="title">
+            <h3> Term Name </h3>
+        </div>
+        <img class="photothumb" src="FLAG SOURCE">
+        <div class="desc">
+            <p>DEFINITION</p>
+        </div>
+    </div>
+</div>
+
+
+
+CUSTOMISING THE APPEARANCE
+
+style="background-color: XXX;"
