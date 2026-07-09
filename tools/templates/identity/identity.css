@@ -61,10 +61,11 @@ body {
     }
 }
 
+.item {
+  display: none;
+}
+
 .show {
     display: block;
 }
 
-.item {
-  display: none;
-}
