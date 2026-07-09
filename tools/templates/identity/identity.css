@@ -1,15 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap');
+
+/* Above are the imported fonts. Feel free to change these using fonts from google fonts. */
+
 :root{
   --background-color: #374046;
   --background-text: #ffffff; 
+  --background-text-link: #28a0f0;
 
   --card-background: #ffffff; 
   --card-text: #374046; 
   --card-header: #09283d; 
   --card-header-text: #ffffff;
 
-  --button-background: ;
-  --button-text: ;
-  --button-hover: ; 
+  --button-background: #374046;
+  --button-text: #ffffff;
+  --button-hover: #5b676e;
+
+  --body-font: "Brawler";
+  --heading-font: "Lexend Deca";
+  --button-font: "Brawler";
 }
 
 
@@ -26,8 +36,12 @@ body {
   margin: 10px;
 	color: var(--background-text);
 	background-color: var(--background-color);
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: var(--body-font);
 	font-size: 1.15em; 
+
+  a {
+    color: var(--background-text-link);
+  }
 }
 
 .item {
@@ -52,16 +66,22 @@ body {
   color: var(--card-text);
   padding: 10px; 
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
 
 .buttons button {
-    background-color: #374046;
+    background-color: var(--button-background);
     border: 0px;
     padding: 10px 20px;
     margin-bottom: 20px;
-    color: white;
+    color: var(--button-text);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    font-size: 19px;
 
     &:hover {
-        background-color: #5b676e;
+        background-color: var(--button-hover);
     }
 }
 
