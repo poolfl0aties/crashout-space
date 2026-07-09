@@ -30,12 +30,13 @@ for(x=0;x<allItems.length;x++){
 function filterItem(filter) {
   var x, i;
   x = document.getElementsByClassName("item");
-  if (filter == "all") filter = "";
+  if (filter == "all") filter = "item";
   console.log(filter);
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(filter) > -1) w3AddClass(x[i], "show");
+    console.log(x[i].classList);
+    if (x[i].classList.contains(filter)) w3AddClass(x[i], "show");
   }
 }
 
