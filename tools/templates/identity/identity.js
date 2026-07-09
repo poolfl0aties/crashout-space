@@ -40,6 +40,7 @@ function filterItem(filter) {
     console.log(x[i].classList);
     if (x[i].classList.contains(filter)) addClass(x[i], "show");
   }
+  resizeAllGridItems();
 }
 
 // Show filtered elements

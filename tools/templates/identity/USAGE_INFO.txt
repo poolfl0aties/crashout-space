@@ -21,16 +21,18 @@ For creating a new button, you should add the below text into the buttons sectio
 
 These terms do not have to match, and for button content longer than one word, I recommend that they don't. For making life easier, you should keep your class names as short and simple as possible. 
 
-Your new class also needs to be applied to the appropriate boxes. This class should be added next to the "item" class. 
+Your new class also needs to be applied to the appropriate boxes. This class should be added next to the "item" class. Terms can have multiple filters.
 
 
 
 ADDING NEW TERMS
 
+Every new block for a new term follows the below template. Copy and paste this into the div with the "grid" class. Replace 'FILTER' with the filter tag(s) you wish to use (gender, attraction, etc.), replace 'FLAG SOURCE' with either a link to a hosted image, or a reference to the file in your own site, and replace 'TERM NAME' and 'DEFINITION' with the term name and definitions.
+
 <div class="item FILTER">
     <div class="content">
         <div class="title">
-            <h3> Term Name </h3>
+            <h3> TERM NAME </h3>
         </div>
         <img class="photothumb" src="FLAG SOURCE">
         <div class="desc">
@@ -43,4 +45,4 @@ ADDING NEW TERMS
 
 CUSTOMISING THE APPEARANCE
 
-style="background-color: XXX;"
+A lot of the styling for this page is done with variables in the root, at the top of the css file. You are, of course, welcome to make more changes in the css, but if you're just looking to change colours and fonts, these variables should be functional enough. 
