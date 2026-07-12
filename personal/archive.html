@@ -3,37 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@spectrral term archive</title>
-    <script src="/scripts/accordion.js"> </script>
-    <link rel="stylesheet" href="/style/accordion.css"> 
+    <link rel="stylesheet" href="/style/archive.css">
+    <script defer src="/scripts/archive.js"> </script>
+    <title>spectrral term archive</title>
 </head>
 <body>
-    <button onclick="accordion('species')" class="accordion"> alterhumanity </button>
-    <div id="species" class="hidden content"> <p> wack </p></div>
 
-    <br>
+    <div class="info">
+        <p> This is an archive of every term posted on spectrral, plus the ones in the queue and some unposted entirely. </p>
 
-    <button onclick="accordion('neoumbrella')" class="accordion"> neoumbrellas </button>
-    <div id="neoumbrella" class="hidden content"> <p> wack </p></div>
+        <div class="buttons"> 
 
-    <br>
+            <button onclick="filterItem('item')"> all </button>
+            <button onclick="filterItem('gender')"> genders </button>
+            <button onclick="filterItem('alterhuman')"> alterhumanity </button>
+            <button onclick="filterItem('attraction')"> attractions </button>
+            <button onclick="filterItem('orientation')"> orientations </button>
+            <button onclick="filterItem('identity')"> identities </button>
+            <button onclick="filterItem('reference')"> referential </button>
 
-    <button onclick="accordion('genders')" class="accordion"> genders </button>
-    <div id="genders" class="hidden content"> <p> wack </p></div>
-
-    <br>
-
-    <button onclick="accordion('attraction')" class="accordion"> attractions + orientations </button>
-    <div id="attraction" class="hidden content">
-        <button onclick="accordion('pseudo')" class="accordion"> pseudoattractional </button>
-        <div id="pseudo" class="hidden content"> 
-            <p> wack </p>
         </div>
+
     </div>
 
-    <br>
+    <div class="grid">
 
-    <button onclick="accordion('identity')" class="accordion"> general identity </button>
-    <div id="identity" class="hidden content"> <p> wack </p></div>
+        <div class="item alterhuman">
+            <div class="content">
+                <div class="title">
+                    <h3> German Shepherd Species </h3>
+                </div>
+                <img class="photothumb" src="/images/flags/german shepherd species.png">
+                <div class="desc">
+                    <p> A species flag for German Shepherds. This is an alt flag. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item identity">
+            <div class="content">
+                <div class="title">
+                    <h3> morifluxend </h3>
+                </div>
+                <img class="photothumb" src="/images/flags/morifluxend.jpg">
+                <div class="desc">
+                    <p> A moriend in which one fluctuates between apathy and caring about one's mortaelity. <br> <br> OR a moriend in which one fluctuates between apathy and caring about one being dead. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item identity">
+            <div class="content">
+                <div class="title">
+                    <h3> moridae▨ </h3>
+                </div>
+                <img class="photothumb" src="/images/flags/moridaefilaire.png">
+                <div class="desc">
+                    <p> A term for when one identifies with, as, and/or connects to moridae in a strange, unnatural, and eerie way. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item identity">
+            <div class="content">
+                <div class="title">
+                    <h3> moridae🪻 </h3>
+                </div>
+                <img class="photothumb" src="/images/flags/moridae🪻.png">
+                <div class="desc">
+                    <p> A term for someone who identifies as moridae in a beautiful yet dangerous way </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item identity">
+            <div class="content">
+                <div class="title">
+                    <h3> moridae␥ </h3>
+                </div>
+                <img class="photothumb" src="/images/flags/moridaescar.png">
+                <div class="desc">
+                    <p> A term for when one identifies with, as, and/or connects to moridae in a rough, damaged, and traumatized way. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item identity">
+            <div class="content">
+                <div class="title">
+                    <h3> moridae⌖ </h3>
+                </div>
+                <img class="photothumb" src="/images/flags/moridae⌖.png">
+                <div class="desc">
+                    <p> A term for when you identify as moridae or connect to moridae in an unstable, violent, and obsessive way. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item identity">
+            <div class="content">
+                <div class="title">
+                    <h3> moridae☢︎ </h3>
+                </div>
+                <img class="photothumb" src="/images/flags/moridae☢︎.png">
+                <div class="desc">
+                    <p> A term for when one identifies as moridae, or connects to moridae in a post-apocalyptic, survivalist, and cautious way. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item identity">
+            <div class="content">
+                <div class="title">
+                    <h3> moridaecora </h3>
+                </div>
+                <img class="photothumb" src="/images/flags/moridaecora.jpg">
+                <div class="desc">
+                    <p> A term for those who’s identity is moridae at its core; it will always be moridae, should always be perceived as moridae, and cannot exist without being moridae. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item identity">
+            <div class="content">
+                <div class="title">
+                    <h3> baneflux </h3>
+                </div>
+                <img class="photothumb" src="/images/flags/baneflux.jpg">
+                <div class="desc">
+                    <p> Could also be called grimmflux. a subset of genderflux in which one's banehood / grimmhood / mortaelity fluctuates in intensity. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item reference">
+            <div class="content">
+                <div class="title">
+                    <h3> gravemate </h3>
+                </div>
+                <img class="photothumb" src="/images/flags/gravemate.png">
+                <div class="desc">
+                    <p> A flag for when one uses gravemate, exclusively or not, in place of partner.  </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item identity">
+            <div class="content">
+                <div class="title">
+                    <h3> moridae </h3>
+                </div>
+                <img class="photothumb" src="/images/flags/moridae (4).png">
+                <div class="desc">
+                    <p> A neoumbrella related to death. It may also relate to concepts surrounding death, but this is not at the core of the experience. <br> terminology; <br>
+                        subterm — moriend <br>
+                        quality — mor / mortael / mortaelity <br>
+                        gender-in-nature — ENDIN <br>
+                        individual — bane / grimm <br>
+                        casual referential — reap <br>
+                        partner — gravemate </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item identity">
+            <div class="content">
+                <div class="title">
+                    <h3> pet adjacent </h3>
+                </div>
+                <img class="photothumb" src="/images/flags/pet adjacent.png">
+                <div class="desc">
+                    <p> When one is pet adjacent / adjacent to pets without directly being a pet.  </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item identity">
+            <div class="content">
+                <div class="title">
+                    <h3> bird adjacent </h3>
+                </div>
+                <img class="photothumb" src="/images/flags/bird adjacent.png">
+                <div class="desc">
+                    <p> When one is bird adjacent / adjacent to birds without directly being a bird.  </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item gender">
+            <div class="content">
+                <div class="title">
+                    <h3> combalinenles </h3>
+                </div>
+                <img class="photothumb" src="/images/flags/combalinenles.png">
+                <div class="desc">
+                    <p> An agender/genderless spectrum subterm in which one's genderlessness is characterized by and/or acts like combalinehood  </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item gender">
+            <div class="content">
+                <div class="title">
+                    <h3> sunsineyenles </h3>
+                </div>
+                <img class="photothumb" src="/images/flags/sunsineyenles.png">
+                <div class="desc">
+                    <p> An agender/genderless spectrum subterm in which one's genderlessness is characterized by and/or acts like sunsinity </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item gender">
+            <div class="content">
+                <div class="title">
+                    <h3> insomnitek </h3>
+                </div>
+                <div class="desc">
+                    <p> A tekgender related to insomnia, especially in relation to coding + caffeine </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item identity">
+            <div class="content">
+                <div class="title">
+                    <h3> communaith </h3>
+                </div>
+                <img class="photothumb" src="/images/flags/communaith (2).png">
+                <p></p>
+                <img class="photothumb" src="/images/flags/communaith (3).png">
+                <div class="desc">
+                    <p> When community is simply a fact of one's existence or identity. it may feel that, without community, there'd be no you. </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
